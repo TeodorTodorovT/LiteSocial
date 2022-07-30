@@ -12,7 +12,7 @@ const Topbar = () =>{
             </div>
             <div className="topbarCenter">
                 <div className="searchbar">
-                    <SearchIcon/>
+                    <SearchIcon className="searchIcon"/>
                     <input placeholder="What are you looking for?" className="searchInput" />
                 </div>
             </div>
@@ -36,6 +36,7 @@ const Topbar = () =>{
                     </div>
                 </div>
                 <img src="/assets/person/1.jpg" alt="" className="topbarProfilePic" />
+
             </div>
             
 
