@@ -14,6 +14,7 @@ const Topbar = () =>{
 
     const handleLogout = () =>{
         dispatch({type:"LOGOUT"})
+        
     }
     return (
         <div className="topbarContainer">

@@ -76,3 +76,17 @@
       border-bottom: 1px dashed gray;
       font-size: 15px;
   }
+
+
+.postIcon:hover{
+  color: #1877f2;
+  cursor: pointer;
+}
+
+.updateButton{
+  border: none;
+  background-color: #1877f2;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
