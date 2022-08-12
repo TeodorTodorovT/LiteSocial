@@ -19,3 +19,7 @@ export const Unfollow = (userId) =>({
     type:"UNFOLLOW",
     payload: userId
 })
+
+export const Logout = (userId) =>({
+    type:"LOGOUT",
+})

@@ -9,8 +9,12 @@ import { AuthContext } from "../../context/AuthContext"
 
 const Topbar = () =>{
 
-    const {user} = useContext(AuthContext)
+    const {user, dispatch} = useContext(AuthContext)
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
+    const handleLogout = () =>{
+        dispatch({type:"LOGOUT"})
+    }
     return (
         <div className="topbarContainer">
             <div className="topbarLeft">
@@ -26,8 +30,8 @@ const Topbar = () =>{
             </div>
             <div className="topbarRight">
                 <div className="topbarLinks">
-                    <span className="topbarLink">Homepage</span>
-                    <span className="topbarLink">Timeline</span> 
+                    <span className="topbarLink" onClick={handleLogout}>{user && "LOGOUT"}</span>
+                    
                 </div>
                 <div className="topbarIcons">
                     <div className="topbarIconItem">
