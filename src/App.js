@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom/client";
+
 import {
   BrowserRouter,
   Routes,
