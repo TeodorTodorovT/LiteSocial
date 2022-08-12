@@ -4,6 +4,7 @@ import { loginCall } from "../../apiCalls"
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext"
 import { CircularProgress } from "@mui/material"
+import { Link } from "react-router-dom";
 
 export default function Login() {
 
@@ -37,7 +38,9 @@ export default function Login() {
                     />
                     <button className="loginButton" type="submit" disabled={isFetching}>{isFetching ? <CircularProgress color="inherit" size="20px"/> : "Log in"}</button>
                     <span className="loginForgot">Forgot password?</span>
+                    <Link to="/register">
                     <button className="loginRegisterButton">{isFetching ? <CircularProgress color="inherit" size="20px"/> : "Create an account"}</button>
+                    </Link>
                 </form>
             </div>
         </div>
